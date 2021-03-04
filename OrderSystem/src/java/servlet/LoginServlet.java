@@ -1,6 +1,5 @@
 package servlet;
-import Domain.Customer;
-import exceptions.LoginException;
+
 
 
 import java.io.IOException;
@@ -10,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Domain.Customer;
+import exceptions.LoginException;
 public class LoginServlet extends HttpServlet {
 
     
@@ -18,11 +19,12 @@ public class LoginServlet extends HttpServlet {
           String url = "/index.html";
           String userID;
           String password;
-
+ System.out.println("loginServlet page");
         String action = request.getParameter("action");
         if (action.equals("login")){
             userID = request.getParameter("userID");
              password = request.getParameter("password");
+             System.out.println( userID +"loginServlet");
             try {  
              Customer customer = Customer.processLogin(userID,password);
             }

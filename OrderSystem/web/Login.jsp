@@ -11,6 +11,7 @@
     
     <form action="login" method="post">
         <input type="hidden" name="action" value="login">        
+        
         <label class="pad_top">UserID:</label>
         <input type="text" name="userID" required><br>
         
