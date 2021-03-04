@@ -18,6 +18,7 @@ public class Customer {
         Customer customer = null;
         try{
            customer = findByUserID(userID);
+           System.out.print( userID +"Customer");
         }
         catch(LoginException e){
             

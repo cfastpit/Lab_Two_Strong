@@ -9,7 +9,9 @@ public class CustomerDA {
     // find by userID
     public static Customer findByUserID(String userID)throws LoginException{
      for(int i = 0; i<customerList.size();i++){
-         
+         if(customerList.get(i).getUserID().equals(userID))
+             System.out.print( userID +"CustomerDA");
+                return customerList.get(i);
      }
      LoginException e = new LoginException("User ID " +userID+ "not found");
      throw e;

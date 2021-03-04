@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login</title>
+        <title> Fast Tech Login</title>
          <link rel="stylesheet" href="styles/main.css" type="text/css"/>
     </head>
     <body>
@@ -13,6 +13,7 @@
         <input type="hidden" name="action" value="login">        
         <label class="pad_top">UserID:</label>
         <input type="text" name="userID" required><br>
+        
         <label class="pad_top">Password:</label>
         <input type="password" name="password" required><br>
         
